@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/arm64 4.19.12-1 Kernel Configuration
+# Linux/arm64 4.19.15-1 Kernel Configuration
 #
 
 #
@@ -4662,6 +4662,7 @@ CONFIG_USB_G_HID=m
 # CONFIG_USB_G_DBGP is not set
 CONFIG_USB_G_WEBCAM=m
 # CONFIG_TYPEC is not set
+CONFIG_USB_ROLE_SWITCH=m
 # CONFIG_USB_LED_TRIG is not set
 CONFIG_USB_ULPI_BUS=y
 # CONFIG_UWB is not set
