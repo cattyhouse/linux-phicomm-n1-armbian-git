@@ -1,8 +1,8 @@
 # arg 1:  the new package version
 # arg 2:  the old package version
 
-KERNEL_NAME=-phicomm-n1-armbian-git
-KERNEL_VERSION=4.19.6-1-ARCH
+KERNEL_NAME=-phicomm-n1-lts-git
+KERNEL_VERSION=4.19.16-3-ARCH
 
 post_install () {
   # updating module dependencies

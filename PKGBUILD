@@ -1,16 +1,16 @@
-# AArch64 kernel for Phicomm N1, Armbian source
+# AArch64 kernel for Phicomm N1
 # Maintainer: Jerry Xiao <isjerryxiao at outlook dot com>
 # Contributor: Kevin Mihelich <kevin@archlinuxarm.org>
 # Contributor: Peter Cai <peter at typeblog dot net>
 
 buildarch=8
 
-pkgbase=linux-phicomm-n1-armbian-git
+pkgbase=linux-phicomm-n1-lts-git
 _srcname=Amlogic_s905-kernel
 _kernelname=${pkgbase#linux}
-_desc="AArch64 kernel for Phicomm N1, Armbian source"
+_desc="AArch64 kernel for Phicomm N1"
 pkgver=4.19.16
-pkgrel=1
+pkgrel=3
 arch=('aarch64')
 url="https://github.com/isjerryxiao/Amlogic_s905-kernel"
 license=('GPL2')
@@ -29,7 +29,7 @@ prepare() {
   cd "${srcdir}/${_srcname}"
 
   # reset to a certain version
-  git reset --hard 00fe689fb7ad3d71716a2697d0ee65ac54e8bd63
+  git reset --hard 6c3d8467b371ad3f0e76028fa221344127ae46e6
 
   # Dirty hack to git rid of the + in kernel version
   rm -rf .git
